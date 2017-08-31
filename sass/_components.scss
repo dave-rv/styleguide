@@ -1634,3 +1634,76 @@
         }
     }
 }
+// Product Play Block
+//
+// markup:
+// <div class="play-block {$modifiers}">
+//    <a href="#">
+//      <div class="columns is-mobile">
+//          <div class="column">
+//              <h2><span>They all used macro-analysis. That’s why you should care about this kind of research.</span></h2>
+//          </div>
+//      </div>
+//      <div class="columns is-mobile">
+//          <div class="column is-paddingless">
+//              <div class="play-block_body">How to use Macro Analysis to Gain an Edge <span class="play-block__play">press play <button class="icon-button fa-play hide-text">Play</button></span></div>
+//          </div>
+//      </div>
+//    </a>
+// </div>
+//
+// Styleguide 5.20
+.play-block {
+    
+    background: url('#{$root}/images/components/product-play-block-bg-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    a {
+        text-decoration: none;
+    }
+    
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: $baseline;
+    text-transform: uppercase;
+    
+    @include tablet {
+        padding: $baseline ($baseline * 2);
+    }
+    
+    h2, h3 {
+        span {
+            margin: 0;
+            font-weight: 800;
+        }
+    }
+    h2 {
+        margin-bottom: 1rem;
+        line-height: 1.5rem;
+        span {
+            
+            font-size: $size-3;
+            color: black;
+            background-color: white;
+            box-shadow: 10px 0 0 white, -10px 0 0 white;
+        }
+
+        @include tablet {
+            line-height: 2.1rem;
+            span {
+                font-size: $size-3;
+            }
+        }
+    }
+    .play-block_body {
+        font-size: $size-2;
+        font-weight: 800;
+        color: #fff;
+        line-height: 3rem;
+    }
+    .play-block__play {
+    }
+
+}
